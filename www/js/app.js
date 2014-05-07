@@ -37,7 +37,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/dash',
       views: {
         'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
+          templateUrl: 'templates/tab-meeting-reservation.html',
           controller: 'DashCtrl'
         }
       }
@@ -47,7 +47,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/friends',
       views: {
         'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
+          templateUrl: 'templates/tab-room-info.html',
           controller: 'FriendsCtrl'
         }
       }
