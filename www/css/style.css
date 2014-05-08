@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+
+.grayblock{
+   background-color:gray;
+   height: 10%;
+   border-radius: 10px;
+}
+
+.mylist{
+	height: 10%;
+}
+
+
+

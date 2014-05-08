@@ -30,7 +30,33 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       abstract: true,
       templateUrl: "templates/tabs.html"
     })
-
+	.state('tab.quick-reservation', {
+      url: '/quick-reservation',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/quick-reservation.html',
+          controller: 'QuickReservationController'
+        }
+      }
+    })
+	.state('tab.advance-reservation', {
+      url: '/advance-reservation',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/advance-reservation.html',
+          controller: 'AdvanceReservationController'
+        }
+      }
+    })
+	.state('tab.book-meeting', {
+      url: '/book-meeting/:roomId',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/book-meeting.html',
+          controller: 'BookMeetingController'
+        }
+      }
+    })
     // Each tab has its own nav history stack:
 
     .state('tab.dash', {
@@ -71,7 +97,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+	
+	
+  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
