@@ -1,0 +1,17 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view title="Quick Reservation"> 
+	<ion-content has-header="true" padding="true">
+		<div class="list">
+			<p>Available Shanghai VIA(Profile Based) meeting rooms around you within today.</p>
+			<a ng-repeat="room in rooms" href="#/tab/book-meeting/{{room.id}}" class="item item-icon-left"> <i class="icon ion-person-stalker"></i> 
+				<h2>{{room.name}}</h2>
+		      	<p><span>Capacity: {{room.capacity}}</span>&nbsp;&nbsp;<span>Time: Now-{{room.time}}</span></p>
+			</a>
+		</div>
+	</ion-content> 
+</ion-view>
